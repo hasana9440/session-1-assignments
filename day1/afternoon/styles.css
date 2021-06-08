@@ -1,0 +1,12 @@
+<script >
+		//function defination
+		function changecolor() {
+			document.getElementByid("abcde").style.color="red";
+			
+		}
+</style>
+
+h1{
+	id="abcde"
+	<button type="button" onclick="changecolor()">click to change</button>
+}

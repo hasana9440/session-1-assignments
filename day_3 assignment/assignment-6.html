@@ -1,0 +1,41 @@
+<!-- Create an input that reads the name, aadhaar number, address, and displays it in the table format. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form details</title>
+</head>
+<body>
+	
+		<label style="color: red">name</label>
+		<input type="text" id="name" name="uname">
+		<br><br>
+		<label style="color:red">aadhar</label>
+		<input type="number" id="aadhar" name="aadhar">
+		<br><br>
+		<label>address</label>
+		<textarea id="address" rows="4" cols="40"></textarea>
+		<br><br>
+		<button onclick="read()">submit</button>
+		<p id="result"></p>
+		<p id="result1"></p>
+		<p id="result2"></p>
+		<script >
+			function read() {
+			// body...
+			 var a=document.getElementById('name').value;
+			 document.getElementById('result').innerHTML=a;
+			 var b=document.getElementById('aadhar').value;
+			 document.getElementById('result1').innerHTML=b;
+			 var c=document.getElementById('address').value;
+			 document.getElementById('result2').innerHTML=c;
+		
+			}
+	</script>
+
+
+
+
+	
+</body>
+</html>

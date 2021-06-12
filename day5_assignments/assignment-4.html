@@ -1,0 +1,30 @@
+<!-- Create paragraphs in the div tag and demonstrate general sibling css selector, highlight the paragraphs respectively. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>general silbiling selector</title>
+	<style>
+		div ~ p{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>this is general sibiling selector</h1>
+	<p>this is para 1</p>
+	<div>
+		<p>this is paragraph 2 in div</p>
+		<p>this is paragraph 3 in div</p>
+	</div>
+	<p>this is paragraph 4 after div
+	</p>
+	<p>this is paragraph 5 after div</p>
+	<div>
+		<p>this is paragraph 6 in div</p>
+		<p>this is paragraph 7 in div</p>
+	</div>
+	<p>this is paragraph 8 after div</p>
+	<p>this is paragraph 9 after div</p>
+</body>
+</html>
